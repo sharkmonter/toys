@@ -1,0 +1,25 @@
+html, body
+{
+    height: 100%;
+    margin:auto;
+}
+
+body
+{
+    background-color: rgb(41, 44, 48);
+}
+
+.grid
+{
+    margin:auto 10%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.square
+{
+    height: 5px;
+    width: 5px;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: white;
+}
