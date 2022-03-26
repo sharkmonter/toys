@@ -57,6 +57,4 @@ async function getAPI(url)
 }
 
 getCurrentConditions();
-
-await new Promise(r => setTimeout(r, 2000));
 getWeatherReport();
