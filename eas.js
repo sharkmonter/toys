@@ -1,13 +1,40 @@
+let mouseDown = 0;  
+let paletteChoice = "flashy";
+
+window.onmousedown = () => 
+{  
+  ++mouseDown;   
+}  
+
+window.onmouseup = () => {  
+  mouseDown = 0;  
+}
+
+const pUnicorn = document.getElementById("nunicorn");
+const pRainbow = document.getElementById("nainbow");
+
+pUnicorn.addEventListener('click', (e) =>
+{
+    paletteChoice = "flashy";
+});
+
+pRainbow.addEventListener('click', (e) =>
+{
+    paletteChoice = "rainbow";
+});
+
+
 function addEvent(elm)
 {
-    elm.addEventListener('mouseover', (e) => 
+    elm.addEventListener('pointerover', (e) => 
     {
-        let red = Math.floor(Math.random() * 250 + 0);
-        let green = Math.floor(Math.random() * 250 + 0);
-        let blue = Math.floor(Math.random() * 250 + 0);
-
-        e.target.classList.remove("square");
-        e.target.classList.add("flashy");
+        if (mouseDown > 0)
+        {
+            e.target.classList.remove("square");
+            e.target.classList.remove("rainbow");
+            e.target.classList.remove("flashy");
+            e.target.classList.add(paletteChoice);
+        }
     });
 }
 
@@ -18,10 +45,11 @@ grid.classList.add('grid');
 document.body.appendChild(grid);
 
 
-for (i = 0; i < 30000; i++)
+for (i = 0; i < 20000; i++)
 {
     let square = document.createElement('div');
     square.classList.add('square');
+    square.classList.add('boxy');
     grid.appendChild(square);
 
     addEvent(square);
