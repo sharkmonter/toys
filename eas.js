@@ -6,7 +6,8 @@ function addEvent(elm)
         let green = Math.floor(Math.random() * 250 + 0);
         let blue = Math.floor(Math.random() * 250 + 0);
 
-        e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
+        e.target.classList.remove("square");
+        e.target.classList.add("flashy");
     });
 }
 
