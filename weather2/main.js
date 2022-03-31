@@ -58,3 +58,4 @@ async function getAPI(url)
 
 getCurrentConditions();
 getWeatherReport();
+

@@ -15,7 +15,7 @@ body
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.main
+main
 {
     background-color: var(--bg-color);
 
@@ -60,9 +60,10 @@ body
 {
     background-color:rgb(54, 54, 70);
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
     align-items: center;
+    gap: 30px;
 }
 
 .mainDisplay h2
@@ -89,10 +90,10 @@ body
     margin:0;
     background-color: rgb(37, 50, 87);
     border:1px solid rgb(255, 255, 255);
-    height:90%;
-    width: 450px;
     box-shadow: 10px 5px 5px rgb(29, 29, 29);
     overflow:hidden;
+    height:700px;
+    width: 500px;
 }
 
 #currentHeader
