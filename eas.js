@@ -11,9 +11,9 @@ window.onpointerup = () => {
   mouseDown = 0;  
 }
 
-window.ondragstart = () => {
+/*window.ondragstart = () => {
     mouseDown = 0;  
-}
+}*/
 
 const pUnicorn = document.getElementById("nunicorn");
 const pRainbow = document.getElementById("nainbow");
