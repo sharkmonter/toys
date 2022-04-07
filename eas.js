@@ -76,7 +76,13 @@ async function loadState()
         var classList = document.getElementById(i).classList;
 
         classList.remove(classList.item(1));
+
         classList.add(lastDrawing[i][1]);
+
+        if (lastDrawing[i][1] != "black")
+        {
+            await new Promise(resolve => setTimeout(resolve, 1));
+        }
     }
 
     isLoading = false;
