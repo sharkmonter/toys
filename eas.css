@@ -67,6 +67,11 @@ footer
     background: linear-gradient(90deg, rgba(255,255,255,1) 6%, rgba(0,251,255,1) 22%, rgba(236,138,230,1) 38%, rgba(178,255,144,1) 56%, rgba(246,255,125,1) 69%, rgba(221,155,197,1) 84%, rgba(223,101,202,1) 100%);
 }
 
+#eraser
+{
+    background-color: rgb(34, 34, 34);
+}
+
 #gridtainer
 {
     width: 100%;

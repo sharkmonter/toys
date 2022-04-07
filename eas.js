@@ -12,6 +12,7 @@ window.onmouseup = () => {
 
 const pUnicorn = document.getElementById("nunicorn");
 const pRainbow = document.getElementById("nainbow");
+const pEraser = document.getElementById("eraser");
 
 pUnicorn.addEventListener('click', (e) =>
 {
@@ -22,6 +23,11 @@ pRainbow.addEventListener('click', (e) =>
 {
     paletteChoice = "rainbow";
 });
+
+pEraser.addEventListener('click', (e) =>
+{
+    paletteChoice = "square";
+})
 
 
 function saveState()
