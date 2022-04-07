@@ -1,13 +1,18 @@
 let mouseDown = 0;  
 let paletteChoice = "flashy";
+const pLoad = document.getElementById("load");
 
-window.onmousedown = () => 
+window.onpointerdown = () => 
 {  
   ++mouseDown;   
 }  
 
-window.onmouseup = () => {  
+window.onpointerup = () => {  
   mouseDown = 0;  
+}
+
+window.ondragstart = () => {
+    mouseDown = 0;  
 }
 
 const pUnicorn = document.getElementById("nunicorn");
@@ -99,6 +104,7 @@ function addEvent(elm)
 // Create a grid element
 const grid = document.createElement('div');
 grid.classList.add('grid');
+grid.draggable = false;
 
 document.getElementById("gridtainer").appendChild(grid);
 
@@ -107,12 +113,14 @@ for (i = 0; i <= 70; i++)
 {
     let pegRow = document.createElement('div');
     pegRow.classList.add('pegRow');
+    pegRow.draggable = false;
     
     for(let peg = 1; peg <= 100; peg++)
     {
         let square = document.createElement('div');
         square.classList.add('square');
         square.classList.add('boxy');
+        square.draggable = false;
         square.id = (i * 100) + peg;
 
         pegRow.appendChild(square);
