@@ -131,10 +131,12 @@ function resetState()
 
 function addEvent(elm)
 {
-    elm.addEventListener('pointerover', (e) => 
+    elm.addEventListener('pointermove', (e) => 
     {
+
         if (mouseDown > 0)
         {
+            e.preventDefault();
             e.target.classList.remove("black");
             e.target.classList.remove("rainbow");
             e.target.classList.remove("flashy");
@@ -166,7 +168,7 @@ for (i = 0; i <= 70; i++)
         square.id = (i * 100) + peg;
 
         pegRow.appendChild(square);
-    
+        square.addEventListener('gotpointercapture', e => e.target.releasePointerCapture(e.pointerId));
         addEvent(square);
     }
 
