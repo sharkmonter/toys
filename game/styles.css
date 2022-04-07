@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html 
+{
+    font-size: clamp(10px, .1rem + 2vw, 18px)
+    /*font-size: min(max(1rem, 2vw), 25px);*/
+    /*font-size: clamp(100%, 1rem + 2vw, 20px);*/
+}
+
+p 
+{
+    width: clamp(45ch, 50%, 75ch);
+}
+
+html, body
+{
+    margin:0;
+    width: 100%;
+}
+
+body
+{
+    background-color: rgb(253, 165, 179);
+    display:flex;
+    font-family: cursive;
+}
+
+header
+{
+    display:block;
+    margin-left: 1em;
+}
+
+main
+{
+    margin-top:4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hasCharacter
+{
+    background-image: url('standT.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#readyText
+{
+    background: rgb(255,200,244);
+    background: linear-gradient(90deg, rgba(255,200,244,1) 0%, rgba(121,9,89,1) 52%, rgba(0,251,255,1) 98%);
+}
+
+
+.flipX
+{
+    transform: scaleX(-1);  
+}
+
+.hasFood
+{
+    background-image: url('hotdoge.png');
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+h1
+{
+    font-size: 1.5rem;
+    -webkit-text-stroke: 2px purple;
+    -webkit-text-fill-color: rgb(0, 224, 224);
+}
+
+h2
+{
+    font-size: 1.25rem;
+    margin-bottom:0.1em;
+}
+
+h3
+{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+
+.rowContainer
+{
+    display:flex;
+    margin-right: 1rem;
+}
+
+.tile
+{
+    background-color:pink;
+    flex:1;
+    display:inline-block;
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+#goAgain
+{
+    display: block;
+    text-align: center;
+    font-family: cursive;
+    background-color: purple;
+    font-size: larger;
+    color:whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    border-color: blueviolet;
+}
+
+.badGround
+{
+    background-color: red;
+}
+
+/*html {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 18px;
+    }
+  }*/
+
+ 

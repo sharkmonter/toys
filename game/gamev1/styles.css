@@ -1,0 +1,89 @@
+html, body
+{
+    margin:0;
+    width: 100%;
+    height:100%
+}
+
+body
+{
+    background-color: rgb(253, 165, 179);
+    display:flex;
+    font-family: cursive;
+}
+
+header
+{
+    display:block;
+    margin-left: 5px;
+}
+
+main
+{
+    margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hasCharacter
+{
+    background-image: url('standT.png');
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+#readyText
+{
+    background: rgb(255,200,244);
+    background: linear-gradient(90deg, rgba(255,200,244,1) 0%, rgba(121,9,89,1) 52%, rgba(0,251,255,1) 98%);
+}
+
+
+.flipX
+{
+    transform: scaleX(-1);  
+}
+
+.hasFood
+{
+    background-image: url('hotdoge.png');
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+h1
+{
+    -webkit-text-stroke: 2px purple;
+    -webkit-text-fill-color: rgb(0, 224, 224);
+}
+
+h3
+{
+    text-align: center;
+}
+
+.rowContainer
+{
+    display:flex;
+}
+
+.tile
+{
+    background-color:pink;
+    flex:1;
+    display:inline-block;
+    height: 70px;
+    width: 70px;
+}
+
+#goAgain
+{
+    display: block;
+    text-align: cetner;
+    font-family: cursive;
+    background-color: purple;
+    font-size: larger;
+    color:whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    border-color: blueviolet;
+}
